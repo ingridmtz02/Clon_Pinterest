@@ -1,0 +1,183 @@
+*{
+
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+/* barrita */
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 98vw;
+    height: 80px;
+    font-size: 16px;
+    /* el menu siempre arriba, fixed */
+    position: fixed;
+    z-index: 1;
+    /* backg color de barrita*/
+    background-color: rgb(255, 255, 255);
+}
+/* para id # */
+#pinterest-icon{
+    height: 35px;
+    padding: 4px;
+    width: 35px;
+}
+/* sombra al superponer el cursor :hover*/
+#pinterest-icon:hover{
+    background-color: #e9e9e9;
+    border-radius: 100px;
+}
+.first-list{
+    display: flex;
+}
+.first-list li{
+    list-style: none; 
+    padding: 0px 12px; 
+    /* alto izq der */
+}
+.first-list a{
+    text-decoration: none;
+    color: black;
+}
+#inicio{
+    background-color: black;
+    color: white;
+    padding: 14px;
+    border-radius: 25px;
+}
+.search{
+    flex-grow: 1;
+    height: 48px;
+    background-color: #e9e9e9;
+    border-radius: 30px;
+}
+.search:hover{
+    background-color: #e1e1e1;
+}
+/* al dar click borde azulito */
+.search:focus-within{
+    border: 4px solid #7fc1ff;
+}
+.barra{
+    display: flex;
+    align-items: center;
+    height: 48px;
+}
+.barra input{
+    /* inherit- busca el color de su contenedor padre (barra) */
+    border:none;
+    background-color: inherit; 
+    outline: none;
+    padding: 0px 8px 0px 0px;
+    font-size: 16px;
+    flex-grow: 1;
+    cursor: pointer;
+}
+#lupa {
+    padding: 13px;
+    color: #767676;
+    font-size: 20px;
+    font-weight: bolder;
+}
+/* ICONOS DERECHA */
+.right-items span{
+    padding: 8px;  /* un valor a los 4 lados, 2 valores arribaabajo derizq */
+    color: #767676;
+    font-size:28px;
+}
+.right-items span:hover{
+    background-color: #e9e9e9;
+    border-radius: 150px;
+    cursor: pointer;
+}
+/* Estilos Main */
+/* IMAGENES */
+.contenido{
+    position: absolute;
+    /* para que no tope arriba con el menu */
+    margin-top: 80px;
+}
+
+.imagenes{
+    columns: 5 240px;
+    margin: auto;
+}
+.card-image{
+    /* */
+    position:relative;
+    padding: 6px;
+}
+.card-image img{
+    border-radius: 15px;
+    min-width: 240px;
+    max-width: 240px;
+}
+.card-image:hover > :first-child {
+    filter: brightness(60%);
+}
+.card-image:hover > * {
+
+    visibility: visible;
+    display: inline;
+}
+
+/* botones */
+.button{
+    background-color: #f31032;
+    padding: 15px;
+    border-radius: 30px;
+    position: absolute;
+    left: 57%;
+    top: 5%;
+    padding: 13px 15px;
+    border: none;
+    visibility: hidden;
+}
+.card-image button a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+/* download */
+.oculto1{ 
+    position: absolute;
+    left: 60%;
+    /* Posicion */
+    bottom: 8%;
+    background-color: white;
+    border-radius: 50px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 4px;
+    /* deje de aparecer hasta dar hover */
+    visibility: hidden;
+    display: none;
+
+}
+/* more */
+.oculto2{ 
+    position: absolute;
+    left: 78%;
+    /* Posicion */
+    bottom: 8%;
+    background-color: white;
+    border-radius: 50px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 4px;
+    /* deje de aparecer hasta dar hover */
+    visibility: hidden;
+    display: none;
+
+}
