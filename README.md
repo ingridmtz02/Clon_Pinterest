@@ -14,4 +14,4 @@ Este proyecto fue creado durante el bootcamp de Tecnolochicas PRO, con el objeti
 * Contacto
 
 ### Captura del proyecto
-![Captura del proyecto](/img/Clon_Pinterest.png)
+![Captura del proyecto](/imagenes/Clon_Pinterest.png)
